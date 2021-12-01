@@ -1,2 +1,14 @@
 /* general styles */
 
+body {
+  margin: 0;
+  font-size: var(--fs-400);
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-300);
+  color: var(--clr-neutral-900);
+}
+
+
+.section-title {
+  color: var(--clr-neutral-300);
+}
