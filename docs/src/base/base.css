@@ -1,14 +1,48 @@
 /* general styles */
 
 body {
-  margin: 0;
   font-size: var(--fs-400);
   font-family: var(--ff-sans);
   font-weight: var(--fw-300);
   color: var(--clr-neutral-900);
 }
 
+.primary-header {
+  background-image: url(/docs/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 14rem 9rem;
+}
+
+header .logo {
+  position: absolute;
+  top: calc(var(--spacer) * 2);
+  left: calc(var(--spacer) * 2);
+}
 
 .section-title {
   color: var(--clr-neutral-300);
+}
+
+img {
+  border-radius: var(--br);
+}
+
+section {
+  padding: 2rem 0;
+}
+
+form {
+  font-family: var(--ff-sans);
+}
+
+.article-info {
+  color: var(--clr-neutral-300);
+  font-family: var(--ff-sans);
+  font-size: var(--fs-200);
+  display: flex;
+}
+
+.article-info > * {
+  margin-right: var(--spacer);
 }

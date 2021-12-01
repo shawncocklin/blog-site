@@ -2,6 +2,11 @@
   margin-top: var(--flow-space, var(--spacer));
 }
 
+.about-flow-content > * + *:not(:nth-child(2)) {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
 .flow-content--large {
   --flow-space: 3rem;
 }
+
