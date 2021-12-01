@@ -35,10 +35,12 @@
 *::after {
   box-sizing: border-box;
 }
+body,
 h1,
 h2,
 h3,
-p {
+p,
+figure {
   margin: 0;
 }
 ul[class],
@@ -219,6 +221,10 @@ body {
   font-family: var(--ff-sans);
   font-weight: var(--fw-300);
   color: var(--clr-neutral-900);
+  padding: 1rem;
+}
+a {
+  font-family: var(--ff-sans);
 }
 .primary-header {
   background-image: url(/docs/img/hero.jpg);

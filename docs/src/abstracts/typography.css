@@ -8,6 +8,7 @@ h2 {
   font-weight: var(--fw-200);
 }
 
+
 /* font families */
 
 .ff-serif {
@@ -17,6 +18,7 @@ h2 {
 .ff-sans {
   font-family: var(--ff-sans);
 }
+
 
 /* font sizes */
 

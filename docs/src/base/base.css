@@ -5,6 +5,11 @@ body {
   font-family: var(--ff-sans);
   font-weight: var(--fw-300);
   color: var(--clr-neutral-900);
+  padding: 1rem;
+}
+
+a {
+  font-family: var(--ff-sans);
 }
 
 .primary-header {
