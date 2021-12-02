@@ -168,6 +168,54 @@ h2 {
   border: none;
   background: none;
 }
+.primary-nav {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  background: var(--clr-neutral-900);
+  border-radius: var(--br);
+  opacity: .9;
+}
+.primary-nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0.5em 0;
+}
+.nav-list li > a {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-serif);
+
+}
+@media (min-width: 40em) {
+  .primary-nav {
+    position: absolute;
+    top: calc(var(--spacer) * 1.5);
+    right: calc(var(--spacer) * 2);
+    background: none;
+  }
+
+  .primary-nav li {
+    font-size: 1rem;
+  }
+
+  .primary-nav li:last-of-type {
+    margin-left: 3rem;
+  }
+
+  .primary-nav ul {
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list li > a {
+    color: var(--clr-neutral-900);
+  }
+
+
+}
 .a-center {
   align-items: center;
 }
@@ -209,6 +257,9 @@ h2 {
 .flow-content > * + * {
   margin-top: var(--flow-space, var(--spacer));
 }
+.footer-flow-content > * + * {
+  margin-top: calc(var(--spacer) * 3);
+}
 .about-flow-content > * + *:not(:nth-child(2)) {
   margin-top: var(--flow-space, var(--spacer));
 }
@@ -225,12 +276,14 @@ body {
 }
 a {
   font-family: var(--ff-sans);
+  text-decoration: none;
 }
 .primary-header {
   background-image: url(/docs/img/hero.jpg);
   background-size: cover;
   background-position: center;
-  padding: 14rem 9rem;
+  min-height: 50vh;
+  padding: 2rem;
 }
 header .logo {
   position: absolute;
@@ -257,5 +310,25 @@ form {
 }
 .article-info > * {
   margin-right: var(--spacer);
+}
+footer {
+  margin-bottom: 5rem;
+}
+.site-map li > a,
+.resources li > a {
+  color: var(--clr-neutral-900);
+}
+.social {
+  display: flex;
+}
+.social li {
+  margin-right: 3rem;
+}
+.copyright {
+  order: 2;
+}
+.copyright,
+.social li > a{
+  color: var(--clr-neutral-300);
 }
 

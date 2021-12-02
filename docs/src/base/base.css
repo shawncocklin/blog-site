@@ -10,13 +10,15 @@ body {
 
 a {
   font-family: var(--ff-sans);
+  text-decoration: none;
 }
 
 .primary-header {
   background-image: url(/docs/img/hero.jpg);
   background-size: cover;
   background-position: center;
-  padding: 14rem 9rem;
+  min-height: 50vh;
+  padding: 2rem;
 }
 
 header .logo {
@@ -50,4 +52,30 @@ form {
 
 .article-info > * {
   margin-right: var(--spacer);
+}
+
+footer {
+  margin-bottom: 5rem;
+}
+
+.site-map li > a,
+.resources li > a {
+  color: var(--clr-neutral-900);
+}
+
+.social {
+  display: flex;
+}
+
+.social li {
+  margin-right: 3rem;
+}
+
+.copyright {
+  order: 2;
+}
+
+.copyright,
+.social li > a{
+  color: var(--clr-neutral-300);
 }

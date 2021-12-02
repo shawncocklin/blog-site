@@ -4,6 +4,7 @@
 @import 'abstracts/typography.css';
 @import 'abstracts/colors.css';
 @import 'components/button.css';
+@import 'components/nav.css';
 @import 'layout/alignment.css';
 @import 'layout/split.css';
 @import 'utilities/container.css';

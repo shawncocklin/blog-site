@@ -2,6 +2,10 @@
   margin-top: var(--flow-space, var(--spacer));
 }
 
+.footer-flow-content > * + * {
+  margin-top: calc(var(--spacer) * 3);
+}
+
 .about-flow-content > * + *:not(:nth-child(2)) {
   margin-top: var(--flow-space, var(--spacer));
 }
