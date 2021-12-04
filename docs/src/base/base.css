@@ -10,6 +10,8 @@ body {
 
 a {
   font-family: var(--ff-sans);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-700);
   text-decoration: none;
 }
 
@@ -54,28 +56,3 @@ form {
   margin-right: var(--spacer);
 }
 
-footer {
-  margin-bottom: 5rem;
-}
-
-.site-map li > a,
-.resources li > a {
-  color: var(--clr-neutral-900);
-}
-
-.social {
-  display: flex;
-}
-
-.social li {
-  margin-right: 3rem;
-}
-
-.copyright {
-  order: 2;
-}
-
-.copyright,
-.social li > a{
-  color: var(--clr-neutral-300);
-}

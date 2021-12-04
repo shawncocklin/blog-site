@@ -1,0 +1,40 @@
+.primary-footer {
+  margin-bottom: 5rem;
+}
+
+ul.flow-content {
+  --flow-space: 1.5rem;
+}
+.site-map li > a,
+.resources li > a {
+  color: var(--clr-neutral-900);
+}
+
+.social {
+  display: flex;
+}
+
+.social li {
+  margin-right: 3rem;
+}
+
+.copyright {
+  order: 2;
+}
+
+.copyright,
+.social li > a{
+  font-family: var(--ff-serif);
+  color: var(--clr-neutral-300);
+  font-weight: var(--fw-300);
+}
+
+@media (min-width: 40em) {
+  .primary-footer-content {
+    display: flex;
+  }
+
+  .copyright {
+    order: 0;
+  }
+}
