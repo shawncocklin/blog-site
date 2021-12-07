@@ -2,9 +2,6 @@
   margin-bottom: 5rem;
 }
 
-ul.flow-content {
-  --flow-space: 1.5rem;
-}
 .site-map li > a,
 .resources li > a {
   color: var(--clr-neutral-900);
@@ -32,9 +29,20 @@ ul.flow-content {
 @media (min-width: 40em) {
   .primary-footer-content {
     display: flex;
+    gap: 25em;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 5em;
   }
 
   .copyright {
     order: 0;
+    align-self: flex-start;
+  }
+
+  .social {
+    justify-content : center;
   }
 }

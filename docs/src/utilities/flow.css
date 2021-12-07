@@ -1,12 +1,8 @@
 .flow-content > * + * {
-  margin-top: var(--flow-space, var(--spacer));
+  margin-top: var(--flow-space, 1em);
 }
 
-.about-flow-content > * + *:not(:nth-child(2)) {
-  margin-top: var(--flow-space, var(--spacer));
-}
-
-.flow-content--large {
-  --flow-space: 3rem;
+.xl-spacer {
+  margin-top: 5em;
 }
 

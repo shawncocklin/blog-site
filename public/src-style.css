@@ -43,6 +43,11 @@ p,
 figure {
   margin: 0;
 }
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
 ul[class],
 ol[class] {
   list-style: none;
@@ -216,8 +221,11 @@ h2 {
 
 
 }
-.a-center {
+.flex-align-center {
   align-items: center;
+}
+.flex-justify-center {
+  justify-content: center;
 }
 .box-width {
   max-width: 50%;
@@ -251,17 +259,14 @@ h2 {
 }
 .container {
   padding: 0 var(--spacer);
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 .flow-content > * + * {
-  margin-top: var(--flow-space, var(--spacer));
+  margin-top: var(--flow-space, 1em);
 }
-.about-flow-content > * + *:not(:nth-child(2)) {
-  margin-top: var(--flow-space, var(--spacer));
-}
-.flow-content--large {
-  --flow-space: 3rem;
+.xl-spacer {
+  margin-top: 5em;
 }
 /* general styles */
 body {
@@ -284,6 +289,11 @@ a {
   min-height: 50vh;
   padding: 2rem;
 }
+@media (min-width: 40em) {
+  .primary-header {
+    min-height: 75vh;
+  }
+}
 header .logo {
   position: absolute;
   top: calc(var(--spacer) * 2);
@@ -292,11 +302,33 @@ header .logo {
 .section-title {
   color: var(--clr-neutral-300);
 }
+.section-title,
+.section-subtitle {
+  font-size: var(--fs-600);
+}
 img {
   border-radius: var(--br);
 }
 section {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
+}
+@media (min-width: 40em) {
+  .hero-title.fs-900 {
+    font-size: var(--fs-lg);
+  }
+
+  .hero-body.fs-600 {
+    font-size: var(--fs-900);
+  }
+  
+  section {
+    padding: 3.5rem 0;
+  }
+
+  .section-title,
+  .section-subtitle {
+    font-size: var(--fs-900);
+  }
 }
 form {
   font-family: var(--ff-sans);
@@ -310,11 +342,21 @@ form {
 .article-info > * {
   margin-right: var(--spacer);
 }
+/* homepage styles */
+.hero {
+  --flow-space: 2em;
+}
+@media (min-width: 40em) {
+  .hero-title.fs-900 {
+    font-size: var(--fs-lg);
+  }
+
+  .hero-body.fs-600 {
+    font-size: var(--fs-900);
+  }
+}
 .primary-footer {
   margin-bottom: 5rem;
-}
-ul.flow-content {
-  --flow-space: 1.5rem;
 }
 .site-map li > a,
 .resources li > a {
@@ -338,10 +380,21 @@ ul.flow-content {
 @media (min-width: 40em) {
   .primary-footer-content {
     display: flex;
+    gap: 25em;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 5em;
   }
 
   .copyright {
     order: 0;
+    align-self: flex-start;
+  }
+
+  .social {
+    justify-content : center;
   }
 }
 
