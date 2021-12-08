@@ -279,6 +279,7 @@ a {
 }
 .primary-header {
   background-image: url(/docs/img/hero.jpg);
+  background-color: var(--clr-primary-400);
   background-size: cover;
   background-position: center;
   min-height: 50vh;
