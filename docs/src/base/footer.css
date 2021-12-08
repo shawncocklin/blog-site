@@ -1,5 +1,11 @@
-.primary-footer {
-  margin-bottom: 5rem;
+.primary-footer-content {
+  padding: 3em;
+}
+
+@media (max-width: 40em) {
+  .primary-footer {
+    margin-bottom: 3em;
+  }
 }
 
 .site-map li > a,
@@ -29,20 +35,32 @@
 @media (min-width: 40em) {
   .primary-footer-content {
     display: flex;
-    gap: 25em;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    margin-right: auto;
   }
 
   .footer-nav {
     display: flex;
     gap: 5em;
+    margin-left: auto;
   }
 
   .copyright {
+    text-align: center;
     order: 0;
-    align-self: flex-start;
+    margin: 0 auto;
   }
 
   .social {
     justify-content : center;
+    margin: 0 auto;
   }
+
+  .social-links {
+    padding: 0 1em 1em;
+  }
+
 }
