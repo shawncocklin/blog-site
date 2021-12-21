@@ -43,6 +43,12 @@ p,
 figure {
   margin: 0;
 }
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 h1,
 h2,
 h3 {
@@ -175,8 +181,13 @@ h2 {
   cursor: pointer;
 }
 .btn::after {
-  content: ">";
+  content: "\203A";
   margin-left: 1em;
+  font-weight: var(--fw-300);
+}
+.btn:hover,
+.btn:focus-visible {
+  outline: 1px solid var(--clr-neutral-900);
 }
 .primary-nav {
   position: fixed;
@@ -358,9 +369,15 @@ form {
   }
 }
 .newsletter {
+  margin-top: 2rem;
   display: flex;
+  gap: 3rem;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+}
+.newsletter > div {
+
+  flex-grow: 1;
 }
 input {
   background: none;
@@ -370,8 +387,13 @@ input {
   margin: 0;
   padding: .5em 0;
 }
+.newsletter label {
+  margin-bottom: 0.5em;
+  display: block;
+}
 label {
   font-size: 1rem;
+  font-weight: var(--fw-700);
 }
 input::placeholder {
   font-size: var(--fs-400);
@@ -380,6 +402,18 @@ input::placeholder {
   margin-top: 2rem;
   display: inline-block;
   padding: 0;
+  font-weight: var(--fw-700);
+  text-align: left;
+}
+@media (min-width: 40em) {
+  .newsletter {
+    flex-direction: row;
+    /* align-items: flex-start; */
+  }
+
+  .cta-btn {
+    text-align: right;
+  }
 }
 .primary-footer-content {
   padding: 3em;

@@ -105,9 +105,16 @@ form {
 }
 
 .newsletter {
+  margin-top: 2rem;
   display: flex;
+  gap: 3rem;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+}
+
+.newsletter > div {
+
+  flex-grow: 1;
 }
 
 input {
@@ -119,8 +126,14 @@ input {
   padding: .5em 0;
 }
 
+.newsletter label {
+  margin-bottom: 0.5em;
+  display: block;
+}
+
 label {
   font-size: 1rem;
+  font-weight: var(--fw-700);
 }
 
 input::placeholder {
@@ -131,4 +144,17 @@ input::placeholder {
   margin-top: 2rem;
   display: inline-block;
   padding: 0;
+  font-weight: var(--fw-700);
+  text-align: left;
+}
+
+@media (min-width: 40em) {
+  .newsletter {
+    flex-direction: row;
+    /* align-items: flex-start; */
+  }
+
+  .cta-btn {
+    text-align: right;
+  }
 }

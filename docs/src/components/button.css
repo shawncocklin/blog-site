@@ -7,6 +7,12 @@
 }
 
 .btn::after {
-  content: ">";
+  content: "\203A";
   margin-left: 1em;
+  font-weight: var(--fw-300);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  outline: 1px solid var(--clr-neutral-900);
 }
